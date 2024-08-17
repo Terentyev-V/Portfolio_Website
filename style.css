@@ -3,6 +3,7 @@ body {
     font-family: Helvetica;
     font-size: 22px;
     width: 100%;
+    line-height: 30px;
 }
 
 
@@ -29,7 +30,7 @@ nav {
     }
 
 a {
-    color: #7EDDF2;
+    color: #03738C;
     transition: color 0.25s;
     position: relative;
     cursor: pointer;
@@ -41,7 +42,7 @@ a::after {
     position: absolute;
     content: "";
     inset: 0;
-    background-color: #F205B3;
+    background-color: #7EDDF2;
     scale: 1.5 0;
     z-index: -1;
     transition: 0.45s;
@@ -49,7 +50,7 @@ a::after {
 }
 
 a:hover {
-    color: black;
+    color: #0373ff;
 }
 
 a:hover::after {
@@ -75,10 +76,10 @@ h2 {
 
 .insideAbout {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: 0.4fr 1fr 0.5fr 0.4fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
 }
 
 div div img {
@@ -86,14 +87,43 @@ div div img {
     height: 410px;
     justify-self: center;
     border-radius: 10%;
-    grid-area: 1 / 2 / 3 / 3;
+    grid-area: 1 / 3 / 2 / 4; 
+    
 }
 
-div div p {
-    grid-area: 1 / 1 / 2 / 2;
+.div1 {
+    grid-area: 1 / 2 / 2 / 3;
     justify-self: center;
 }
 
 .div3 {
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 2 / 2 / 3 / 3; 
+    
+}
+
+.insideAbout ul {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.div4 {
+    grid-area: 2 / 3 / 3 / 4;
+    
+}
+
+.skills {
+    display: grid;
+grid-template-columns: 0.2fr 1fr 0.2fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    
+}
+
+
+.skillsinside {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: space-evenly;
 }

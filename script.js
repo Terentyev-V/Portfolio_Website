@@ -15,11 +15,21 @@ let skill5 = document.getElementById("skill5");
 let skill6 = document.getElementById("skill6");
 let skill7 = document.getElementById("skill7");
 
+let word1 = document.getElementById("word1");
+let word2 = document.getElementById("word2");
+let word3 = document.getElementById("word3");
+let word4 = document.getElementById("word4");
+let word5 = document.getElementById("word5");
+let word6 = document.getElementById("word6");
+let word7 = document.getElementById("word7");
 
-skill1.onmouseover = function () {
-    document.getElementById('skill1').innerHTML = 'HTML5';
+word1.hidden= true;
+
+
+skill1.onmousedown = function () {
+    word1.hidden = false;
 };
-skill2.onclick = function () {
+skill2.onmousedown = function () {
     document.getElementById('skill2').innerHTML = 'CSS3';
 };
 skill3.onclick = function () {
@@ -38,11 +48,9 @@ skill7.onclick = function () {
     document.getElementById('skill7').innerHTML = 'Web Design';
 };
 
-skill1.onmouseout = function () {
-    
-}
-
-
+skill1.onmouseup = function() {
+    word1.hidden = true;
+};
 
 
 

@@ -1,5 +1,5 @@
 body {
-    background-color: #03738C;
+    background-color: #6F7356;
     font-family: Helvetica;
     font-size: 22px;
     width: 100%;
@@ -12,13 +12,13 @@ header {
     z-index: 1;
     height: 50px;
     width: 100%;
-    border-bottom: 1px solid #F205B3;
+    border-bottom: 1px solid #3E402D;
     top: 0;
     left: 0;
-    background-color: #590242;
+    background-color: #A1A67C;
     text-align: center;
     align-content: center;
-    /*opacity: 0.8;*/
+    opacity: 0.8;
 }
 
 nav {
@@ -30,7 +30,7 @@ nav {
     }
 
 nav a {
-    color: #03738C;
+    color: black;
     transition: color 0.25s;
     position: relative;
     cursor: pointer;
@@ -42,7 +42,7 @@ nav a::after {
     position: absolute;
     content: "";
     inset: 0;
-    background-color: #7EDDF2;
+    background-color: #F2E5BD;
     scale: 1.5 0;
     z-index: -1;
     transition: 0.45s;
@@ -50,7 +50,7 @@ nav a::after {
 }
 
 nav a:hover {
-    color: #0373ff;
+    color: Black;
 }
 
 nav a:hover::after {
@@ -67,11 +67,9 @@ h2 {
 }
 
 .header {
-    
     height: 100px;
     background-size: cover;
-    padding-top: 35px;
-    
+    padding-top: 35px;    
 }
 
 .insideAbout {
@@ -82,9 +80,16 @@ h2 {
     grid-row-gap: 5px;
 }
 
+.myPhoto {
+    width: 430px;
+    height: 510px;
+    justify-self: center;
+    border-radius: 10%;
+}
+
 div div img {
-    width: 330px;
-    height: 410px;
+   width: 100px;
+    height: 100px;
     justify-self: center;
     border-radius: 10%;
     grid-area: 1 / 3 / 2 / 4; 
@@ -101,10 +106,9 @@ div div img {
     
 }
 
-.insideAbout ul {
-    display: flex;
-    justify-content: space-evenly;
-
+.div1 ul {
+    display: inline-grid;
+    justify-self: center;
 }
 
 .div4 {
@@ -114,65 +118,88 @@ div div img {
 
 .skills {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 0px;  
 }
+
+
+
 
 
 .skillsinside {
-    grid-area: 1 / 2 / 2 / 3;
+   grid-area: 1 / 2 / 2 / 3;
+    position: relative;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;  
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;  
+    gap: 20px;
 }
 
-.icons {
-    display: flex;
-    gap: 60px;
-    
+.skillsinside .skill {
+    position: relative;
+  width: 100px;
+  height: 100px;
+  background: #6F7356;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-top: 45px;
+  border-radius: 10%;
+  
+  
 }
-
-div p img {
-    width: 100px;
-    height: 100px;
-}
-
-.skillsinside p {
-    align-content: center;
-}
-
-
-/*.swing-top-fwd:active {
-	-webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes swing-top-fwd {
-    0% {
-      -webkit-transform: rotateX(0);
-              transform: rotateX(0);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-    }
-    100% {
-      -webkit-transform: rotateX(180deg);
-              transform: rotateX(180deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-    }
+.skillsinside:hover .skill {
+    transform: rotateY(25deg);
   }
-  @keyframes swing-top-fwd {
-    0% {
-      -webkit-transform: rotateX(0);
-              transform: rotateX(0);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-    }
-    100% {
-      -webkit-transform: rotateX(180deg);
-              transform: rotateX(180deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-    }
-  }*/
+  .skillsinside .skill:hover ~ .skill {
+    transform: rotateY(-25deg);
+  }
+  .skillsinside .skill:hover {
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px #F2E5BD;
+  }
+  .skillsinside .skill .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .skillsinside .skill .imgBx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,#F2E5BD,#3E402D);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+  }
+  .skillsinside .skill:hover .imgBx:before {
+    opacity: 1;
+  }
+  .skillsinside .skill .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+#projects {
+    margin-top: 100px;
+}
+
+

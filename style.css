@@ -59,7 +59,7 @@ nav a::after {
 
 
 nav a:hover {
-    color: Black;
+    color: #3E402D;
     
 }
 
@@ -688,3 +688,51 @@ div div img {
     font-size: medium;
     color: #3E402D;
   }
+
+.contacts {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: repeat(5, 0.5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: space-around;   
+}
+
+.contactsInside {
+    grid-area: 2 / 2 / 3 / 3;  
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    align-content: center;
+}
+
+.contactsInside button {
+    background-color: transparent;
+    border: none;
+}
+
+.contactsInside2 {
+    grid-area: 4 / 2 / 5 / 3;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#data {
+    border-bottom: 2px solid #A1A67C;
+}
+
+  .conLogo {
+    width: 75px;
+    height: 75px;
+  }
+
+.conLogo:hover {
+    background-color: #F2E5BD;
+}
+
+

@@ -266,3 +266,29 @@ el.addEventListener('mousedown', function() {
 el.addEventListener('mouseup', function() {
   el.style.transform = 'perspective(500px) scale(1.1) rotateX(0) rotateY(0)'
 })
+
+
+
+/*--------------------- CONTACT ME PAGE ---------------------*/
+
+
+const name = document.querySelector(".contactsInside");
+
+function text1 () {
+    document.getElementById('data').innerHTML = '+48 726341338';
+}
+function text2 () {
+    document.getElementById('data').innerHTML = 'terentyevBlackthorn@gmail.com';
+}
+function text3 () {
+    document.getElementById('data').innerHTML = '+380 507165700';
+}
+function text4 () {
+    document.getElementById('data').innerHTML = '+380 507165700';
+}
+function text5 () {
+    document.getElementById('data').innerHTML = 'www.linkedin.com/in/vladyslav-terentyev';
+}
+function text6 () {
+    document.getElementById('data').innerHTML = 'https://github.com/Terentyev-V';
+}

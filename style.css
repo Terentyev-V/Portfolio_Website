@@ -741,12 +741,15 @@ div div img {
     .item > label {
       font-size: 1.3rem;
     }
-    conLogo {
+    .conLogo {
         width: 50%;
         height: 50%;
     }
     h1 {
-        font-size: 50%;
+        font-size: 75%;
+    }
+    body {
+        position: relative;
     }
   }
 

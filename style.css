@@ -719,12 +719,14 @@ div div img {
     }
 
     div div img {
-        width: 75%;
-        height: 75%;
+        max-width: auto;
+        max-height: auto;
+
     }
     .conLogo {
-        width: 75%;
-        height: 75%;
+        max-width: auto;
+        max-height: auto;
+
     }
 
   }
@@ -747,8 +749,9 @@ div div img {
       font-size: 1.3rem;
     }
     .conLogo {
-        width: 50%;
-        height: 50%;
+        max-width: auto;
+        max-height: auto;
+
     }
     h1 {
         font-size: 75%;
@@ -760,8 +763,11 @@ div div img {
         font-size: 60%;
     }
     div div img {
-        width: 50%;
-        height: 50%;
+        max-width: auto;
+        max-height: auto;
+    }
+    .contactsInside {
+        display: flex;
     }
   }
 

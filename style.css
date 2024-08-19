@@ -27,6 +27,7 @@ nav {
     justify-content: center;
     gap: 70px; 
     align-items: center;
+    
     }
 
 nav a {
@@ -36,26 +37,44 @@ nav a {
     cursor: pointer;
     padding: 0.5rem 1 rem;
     font-size: 20px;
+    text-decoration: none;
 }
 
 nav a::after {
     position: absolute;
     content: "";
     inset: 0;
-    background-color: #F2E5BD;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#ffffff),
+      to(#3E402D)
+    );
     scale: 1.5 0;
     z-index: -1;
     transition: 0.45s;
     border-radius: 10px;
 }
 
+
 nav a:hover {
     color: Black;
+    
 }
 
 nav a:hover::after {
     scale: 1.5 1.5;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#ffffff),
+        to(#3E402D)
+     );
+        
 }
+
 
 
 h1 {
@@ -81,10 +100,11 @@ h2 {
 }
 
 .myPhoto {
-    width: 430px;
-    height: 510px;
+    width: 303px;
+    height: 403px;
     justify-self: center;
     border-radius: 10%;
+    filter: brightness(60%);
 }
 
 div div img {
@@ -92,8 +112,13 @@ div div img {
     height: 100px;
     justify-self: center;
     border-radius: 10%;
-    grid-area: 1 / 3 / 2 / 4; 
     
+    
+}
+
+.cvButton {
+    grid-area: 1 / 3 / 2 / 4; 
+    text-align: center;
 }
 
 .div1 {
@@ -164,7 +189,7 @@ div div img {
   .skillsinside .skill:hover {
     transform: rotateY(0deg) scale(1.25);
     z-index: 1;
-    box-shadow: 0 25px 40px #F2E5BD;
+    box-shadow: 0 0px 40px #F2E5BD;
   }
   .skillsinside .skill .imgBx {
     position: absolute;
@@ -206,7 +231,7 @@ div div img {
 
 
   
-  /* ============= Begin Testimonial Flexbox ============ */
+  /* ============= Begin Flexbox ============ */
   #flex-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -345,7 +370,6 @@ div div img {
       flex-direction: row;
       min-height: auto;
       height: 450px;
-      /* position: absolute; */
       top: 0;
       bottom: 0;
       left: 0;
@@ -353,7 +377,7 @@ div div img {
     }
   
     #left-zone .list {
-      border-right: 2px solid #F2E5BD;
+      border-right: 2px solid transparent;
     }
   
     .content-test {
@@ -394,9 +418,9 @@ div div img {
   }
   
   .content_testimonial-1 .picto {
-    height: 100px;
-    width: 100px;
-    background-image: url("https://i.postimg.cc/RFBHkG46/diamond-Pest-Logo-small.jpg");
+    height: 400px;
+    width: 500px;
+    background-image: url("./Pages/dasmoto.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -408,9 +432,9 @@ div div img {
   }
   
   .content_testimonial-2 .picto {
-    height: 100px;
-    width: 100px;
-    background-image: url("https://i.postimg.cc/bsqXXKCV/a-Plus-Handyman-Logo.jpg");
+    height: 400px;
+    width: 500px;
+    background-image: url("./Pages/styleGuide.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -421,9 +445,9 @@ div div img {
   }
   
   .content_testimonial-3 .picto {
-    height: 100px;
-    width: 100px;
-    background-image: url("https://i.postimg.cc/zV7sq04z/mod-Movers-Logo.jpg");
+    height: 400px;
+    width: 500px;
+    background-image: url("./Pages/teaCozy.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -434,9 +458,9 @@ div div img {
   }
   
   .content_testimonial-4 .picto {
-    height: 100px;
-    width: 100px;
-    background-image: url("https://i.postimg.cc/4Y3rypTz/ak-Pest-Control-Logo.jpg");
+    height: 400px;
+    width: 500px;
+    background-image: url("./Pages/VSexper.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -483,7 +507,7 @@ div div img {
     width: 50px;
     height: 50px;
     margin-left: 15px;
-    background-image: url("./icons/coding.png");
+    background-image: url("./icons/check.png");
     background-position: center;
     background-size: 75% 75%;
     background-repeat: no-repeat;
@@ -497,7 +521,7 @@ div div img {
     width: 50px;
     height: 50px;
     margin-left: 15px;
-    background-image: url("./icons/coding.png");
+    background-image: url("./icons/check.png");
     background-position: center;
     background-size: 75% 75%;
     border-radius: 50%;
@@ -511,7 +535,7 @@ div div img {
     width: 50px;
     height: 50px;
     margin-left: 15px;
-    background-image: url("./icons/coding.png");
+    background-image: url("./icons/check.png");
     background-position: center;
     background-size: 75% 75%;
     background-repeat: no-repeat;
@@ -525,7 +549,7 @@ div div img {
     width: 50px;
     height: 50px;
     margin-left: 15px;
-    background-image: url("./icons/coding.png");
+    background-image: url("./icons/check.png");
     background-position: center;
     background-size: 75% 75%;
     background-repeat: no-repeat;
@@ -537,7 +561,7 @@ div div img {
   }
   
   .label_testimonial-1:hover {
-    background-image: -webkit-gradient(
+    background-image: -webkit-gradient (
       linear,
       left top,
       right top,
@@ -546,7 +570,7 @@ div div img {
     );
     background-image: -webkit-linear-gradient(left, #ffffff, #3E402D);
     background-image: -o-linear-gradient(left, #ffffff, #3E402D);
-    background-image: linear-gradient(to right, #ffffff, ##3E402D);
+    background-image: linear-gradient(to right, #ffffff, #3E402D);
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
@@ -554,7 +578,7 @@ div div img {
   }
   
   .label_testimonial-2:hover {
-    background-image: -webkit-gradient(
+    background-image: -webkit-gradient (
       linear,
       left top,
       right top,
@@ -571,7 +595,7 @@ div div img {
   }
   
   .label_testimonial-3:hover {
-    background-image: -webkit-gradient(
+    background-image: -webkit-gradient (
       linear,
       left top,
       right top,
@@ -588,7 +612,7 @@ div div img {
   }
   
   .label_testimonial-4:hover {
-    background-image: -webkit-gradient(
+    background-image: -webkit-gradient (
       linear,
       left top,
       right top,
@@ -603,16 +627,64 @@ div div img {
     -o-transition: font-size 0.5s;
     transition: font-size 0.5s;
   }
-  
-  p.testimonialState {
-    margin-top: -5px;
-    font-size: 0.8rem;
-    font-style: italic;
-    color: #808080d4;
+  .item p {
+    margin: 10px 0px;
+  }
+  .item h1 {
+    margin-bottom: 0px;
   }
   
-  p.testimonialFrom {
-    margin-top: 5px;
-    font-weight: bold;
-    color: #33475c;
+  .scrollToTopBtn {
+    background-color: transparent;
+    border: none;
+    color: #F2E5BD;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 60px;
+    width: 60px;
+  
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all 0.5s ease;
+  }
+  
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  
+
+#tilt {
+    display: block;
+    height: 403px;
+    width: 303px;
+    background-color: transparent;
+    margin: 0 0;
+    transition: box-shadow 0.1s, transform 0.1s;
+    
+    
+  }
+  
+  #tilt:hover {
+    box-shadow: 0px  0px 50px #F2E5BD;
+    cursor: pointer;
+    border-radius: 10%
+  }
+
+
+  footer {
+    text-align: center;
+    font-size: medium;
+    color: #3E402D;
   }

@@ -682,7 +682,7 @@ div div img {
 }
 
 
-@media screen and (max-width: 926px) {
+@media (min-width: 480px) {
     #flex-container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -732,7 +732,7 @@ div div img {
   }
 
   /* If the screen size is 480px or less */
-  @media screen and (max-width: 480px) {
+  @media  (max-width: 480px) {
     .content_testimonial-1 .picto {
       padding-top: 100px;
     }

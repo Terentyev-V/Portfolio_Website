@@ -362,60 +362,6 @@ div div img {
     opacity: 1;
   }
   
-  @media (min-width: 480px) {
-    #flex-container {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      min-height: auto;
-      height: 450px;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-  
-    #left-zone .list {
-      border-right: 2px solid transparent;
-    }
-  
-    .content-test {
-      width: 65%;
-      height: 100%;
-      pointer-events: auto;
-      -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-      transform: translateY(-100%);
-    }
-  
-    #left-zone {
-      width: 35%;
-    }
-  
-    #right-zone {
-      height: 100%;
-      width: 65%;
-    }
-  }
-  /* If the screen size is 480px or less */
-  @media (max-width: 480px) {
-    .content_testimonial-1 .picto {
-      padding-top: 100px;
-    }
-    .content_testimonial-2 .picto {
-      padding-top: 100px;
-    }
-    .content_testimonial-3 .picto {
-      padding-top: 100px;
-    }
-    .content_testimonial-4 .picto {
-      padding-top: 100px;
-    }
-    .item > label {
-      font-size: 1.3rem;
-    }
-  }
   
   .content_testimonial-1 .picto {
     height: 400px;
@@ -734,5 +680,74 @@ div div img {
 .conLogo:hover {
     background-color: #F2E5BD;
 }
+
+
+@media screen and (min-width: 480px) {
+    #flex-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      min-height: auto;
+      height: 450px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  
+    #left-zone .list {
+      border-right: 2px solid transparent;
+    }
+  
+    .content-test {
+      width: 65%;
+      height: 100%;
+      pointer-events: auto;
+      -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  
+    #left-zone {
+      width: 35%;
+    }
+  
+    #right-zone {
+      height: 100%;
+      width: 65%;
+    }
+
+    div div img {
+        width: 75px;
+        height: 75px;
+    }
+  }
+
+  /* If the screen size is 480px or less */
+  @media screen and (max-width: 480px) {
+    .content_testimonial-1 .picto {
+      padding-top: 100px;
+    }
+    .content_testimonial-2 .picto {
+      padding-top: 100px;
+    }
+    .content_testimonial-3 .picto {
+      padding-top: 100px;
+    }
+    .content_testimonial-4 .picto {
+      padding-top: 100px;
+    }
+    .item > label {
+      font-size: 1.3rem;
+    }
+    div div img {
+        width: 50px;
+        height: 50px;
+    }
+    h1 {
+        font-size: 12px;
+    }
+  }
 
 

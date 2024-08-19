@@ -719,9 +719,14 @@ div div img {
     }
 
     div div img {
-        max-width: auto;
-        max-height: auto;
+        width: 75%;
+        height: 75%;
     }
+    .conLogo {
+        width: 75%;
+        height: 75%;
+    }
+
   }
 
   /* If the screen size is 480px or less */
@@ -742,8 +747,8 @@ div div img {
       font-size: 1.3rem;
     }
     .conLogo {
-        max-width: auto;
-        max-height: auto;
+        width: 50%;
+        height: 50%;
     }
     h1 {
         font-size: 75%;
@@ -753,6 +758,10 @@ div div img {
     }
     footer p {
         font-size: 60%;
+    }
+    div div img {
+        width: 50%;
+        height: 50%;
     }
   }
 

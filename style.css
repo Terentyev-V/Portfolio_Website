@@ -682,7 +682,7 @@ div div img {
 }
 
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 926px) {
     #flex-container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -719,8 +719,8 @@ div div img {
     }
 
     div div img {
-        width: 75px;
-        height: 75px;
+        max-width: auto;
+        max-height: auto;
     }
   }
 
@@ -742,8 +742,8 @@ div div img {
       font-size: 1.3rem;
     }
     .conLogo {
-        width: 80%;
-        height: 80%;
+        max-width: auto;
+        max-height: auto;
     }
     h1 {
         font-size: 75%;

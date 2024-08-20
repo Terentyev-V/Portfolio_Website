@@ -90,6 +90,11 @@ h2 {
     background-size: cover;
     padding-top: 35px;    
 }
+.header1 {
+    height: 100px;
+    background-size: cover;
+    padding-top: 35px;    
+}
 
 .insideAbout {
     display: grid;
@@ -119,6 +124,7 @@ div div img {
 .cvButton {
     grid-area: 1 / 3 / 2 / 4; 
     text-align: center;
+
 }
 
 .div1 {
@@ -637,11 +643,13 @@ div div img {
 
 .contacts {
     display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr;
-    grid-template-rows: repeat(5, 0.5fr);
+    height: 100%;
+    grid-template-columns: 0.2fr auto 0.2fr;
+    grid-template-rows: 0.5fr auto 0.5fr auto 0.5fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    justify-content: space-around;   
+    justify-content: space-around;  
+    font-size: 1.5rem; 
 }
 
 .contactsInside {
@@ -724,8 +732,8 @@ div div img {
 
     }
     .conLogo {
-        max-width: auto;
-        max-height: auto;
+        max-width: 75%;
+        max-height: 55%;
 
     }
 
@@ -748,27 +756,75 @@ div div img {
     .item > label {
       font-size: 1.3rem;
     }
-    .conLogo {
-        max-width: auto;
-        max-height: auto;
-
-    }
-    h1 {
-        font-size: 75%;
-    }
     body {
-        position: relative;
+        font-size: 75%;
     }
     footer p {
         font-size: 60%;
     }
-    div div img {
-        max-width: auto;
-        max-height: auto;
+    .imgBx {
+        max-width: 30%;
+        max-height: 10%;
     }
-    .contactsInside {
-        display: flex;
+    .skills {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
     }
+    .skillsinside {
+        grid-column: 1 / 4 ;
+        gap: 5px;
+
+    }
+   
+    .contacts {
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 0.2fr auto 0.2fr auto 0.2fr;
+    }
+
+    .contactsInside, .contactsInside2 {
+        grid-column: 1 / 4;
+    }
+    .conLogo {
+        max-width: 50%;
+        max-height: 45%;
+    }
+
+    .insideAbout {
+        grid-template-columns: 0.1fr auto 0.1fr;
+        grid-template-rows: 8rem auto;
+    }
+    .cvButton {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        
+        display:flex;
+        justify-content: center;
+    }
+    .myPhoto {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    #tilt {
+        width: 30%;
+        height: 100%;
+        
+    }
+    .div1 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 2;
+    }
+    nav {
+        justify-content: center;
+        gap: 20px;
+    }
+    nav a {
+        font-size: 100%;
+    }
+    .header {
+        height: 50px;
+    }
+
+    
   }
 
 

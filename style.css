@@ -82,12 +82,12 @@ h3 {
 }
 
 .header {
-    height: 100px;
+    height: 50px;
     background-size: cover;
     padding-top: 35px;    
 }
 .header1 {
-    height: 100px;
+    height: 50px;
     background-size: cover;
     padding-top: 35px;   
     font-size: 22px;
@@ -358,23 +358,20 @@ div div img {
     footer p {
         font-size: 60%;
     }
-    .imgBx {
-        max-width: 30%;
-        max-height: 10%;
-    }
-    div div img {
-        max-width: 30%;
-        max-height: 10%;
-    }
+   
+    
     .skills {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.1fr auto 0.1fr;
         grid-template-rows: auto;
     }
     .skillsinside {
-        grid-column: 7 ;
+        grid-column: 2 / 3 ;
         grid-row: 1;
-        gap: 5px;
 
+    }
+    .skillsinside .skill {
+        max-width: 20%;
+        max-height: 15%;
     }
    
     .contacts {
@@ -429,7 +426,26 @@ div div img {
     .header1 h1 {
         font-size: 100%;
     }
+    .projects {
+        display: grid;
+        grid-template-columns: 0.1fr auto 0.1fr;
+        grid-template-rows: 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;  
+        
+    }
+    
+    .projectDiv {
+        margin: 0;
+        height: fit-content;
+    }
+    .projectImg {
+        height: inherit;
+        max-width: 75%;
+    }
+
   }
+
 
   
 

@@ -387,7 +387,7 @@ div div img {
     }
     .conLogo {
         max-width: 60%;
-        max-height: 45%;
+        max-height: 40%;
     }
 
     .insideAbout {
@@ -426,9 +426,6 @@ div div img {
     .header {
         height: 50px;
     }
-    /*.header1 {
-        max-height: 50%;
-    }*/
     .header1 h1 {
         font-size: 100%;
     }

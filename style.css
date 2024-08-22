@@ -160,7 +160,7 @@ div div img {
 }
 
 .skillsinside .skill {
-    position: relative;
+  position: relative;
   width: 100px;
   height: 100px;
   background: #BABF93;
@@ -382,6 +382,7 @@ div div img {
     .skillsinside .skill {
         max-width: 20%;
         max-height: 15%;
+        border-color: #3E402D;
     }
    
     .contacts {

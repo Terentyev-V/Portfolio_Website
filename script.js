@@ -1,3 +1,27 @@
+const skill = document.querySelector(".skillsinside");
+
+function text11 () {
+    document.getElementById('skillName').innerHTML = 'HTML5';
+}
+function text22 () {
+    document.getElementById('skillName').innerHTML = 'CSS3';
+}
+function text33 () {
+    document.getElementById('skillName').innerHTML = 'JavaScript';
+}
+function text44 () {
+    document.getElementById('skillName').innerHTML = 'GitHub';
+}
+function text55 () {
+    document.getElementById('skillName').innerHTML = 'GIT';
+}
+function text66 () {
+    document.getElementById('skillName').innerHTML = 'Microsoft Visual Studio Code';
+}
+function text77 () {
+  document.getElementById('skillName').innerHTML = 'Web Design';
+}
+
 // We select the element we want to target
 let target = document.querySelector("footer");
 

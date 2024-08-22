@@ -110,8 +110,8 @@ h3 {
 }
 
 div div img {
-   width: 100px;
-    height: 100px;
+   width: 50px;
+    height: 50px;
     justify-self: center;
     border-radius: 10%;    
 }
@@ -136,9 +136,9 @@ div div img {
 .skills {
     display: grid;
     grid-template-columns: 0.1fr 1fr 0.1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(2, 0.5fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;  
+    grid-row-gap: 40px;  
 }
 
 
@@ -152,6 +152,11 @@ div div img {
     transform-style: preserve-3d;
     perspective: 500px;
     margin: auto;  
+}
+.skillNameHere {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: center;
 }
 
 .skillsinside .skill {
@@ -177,7 +182,7 @@ div div img {
   .skillsinside .skill:hover {
     transform: rotateY(0deg) scale(1.25);
     z-index: 1;
-    box-shadow: 0 0px 40px #F2E5BD;
+    box-shadow: 0 0 40px #F2E5BD;
   }
   .skillsinside .skill .imgBx {
     position: absolute;
@@ -193,7 +198,7 @@ div div img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg,#F2E5BD,#3E402D);
+    background: transparent;
     z-index: 1;
     opacity: 0;
     transition: 0.5s;
@@ -241,6 +246,11 @@ div div img {
   width: 640px;
   border-radius: 0;
 } 
+
+.projectImg:active {
+    transform: scale(1.2, 1.2);
+    transition: 0.4s ease;
+  } 
 
 
 

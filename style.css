@@ -102,12 +102,11 @@ h3 {
 }
 
 .myPhoto {
-    width: 303px;
-    height: 403px;
+    width: 300px;
+    height: 320px;
     justify-self: center;
     border-radius: 10%;
     filter: brightness(60%);
-    
 }
 
 div div img {
@@ -148,12 +147,11 @@ div div img {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     transform-style: preserve-3d;
     perspective: 500px;
     margin: auto;  
-    gap: 20px;
 }
 
 .skillsinside .skill {
@@ -253,7 +251,7 @@ div div img {
     border: none;
     color: #F2E5BD;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 50px;
     line-height: 60px;
     width: 60px;
   
@@ -281,8 +279,8 @@ div div img {
 
 .tilt {
     display: block;
-    height: 403px;
-    width: 303px;
+    width: 300px;
+    height: 320px;
     background-color: transparent;
     margin: 0 0;
     transition: box-shadow 0.1s, transform 0.1s;
@@ -352,7 +350,7 @@ div div img {
 
 
   /* If the screen size is 480px or less */
-  @media  (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     
     body {
         font-size: 75%;
@@ -364,12 +362,17 @@ div div img {
         max-width: 30%;
         max-height: 10%;
     }
+    div div img {
+        max-width: 30%;
+        max-height: 10%;
+    }
     .skills {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
     }
     .skillsinside {
-        grid-column: 1 / 4 ;
+        grid-column: 7 ;
+        grid-row: 1;
         gap: 5px;
 
     }
@@ -384,16 +387,18 @@ div div img {
     }
     .conLogo {
         max-width: 60%;
-        max-height: 25%;
+        max-height: 45%;
     }
 
     .insideAbout {
         grid-template-columns: 0.1fr auto 0.1fr;
-        grid-template-rows: 8rem auto;
+        grid-template-rows: 12rem auto;
+        
     }
     .cvButton {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
+        margin-bottom: 20px;
         
         display:flex;
         justify-content: center;
@@ -403,7 +408,7 @@ div div img {
         max-height: 100%;
     }
     .tilt {
-        width: 30%;
+        width: 50%;
         height: 100%;
         
     }
@@ -421,8 +426,11 @@ div div img {
     .header {
         height: 50px;
     }
-    .header1 {
-        height: 50px;
+    /*.header1 {
+        max-height: 50%;
+    }*/
+    .header1 h1 {
+        font-size: 100%;
     }
   }
 

@@ -1,10 +1,27 @@
+.noto-sans {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  .oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 body {
-    background-color: #BABF93;
-    font-family: Helvetica;
+    background-color: #0e0e0e;
+    font-family: "Noto Sans", Georgia, serif;
+    font-weight: 200;
     font-size: 22px;
     width: 100%;
-    line-height: 30px;
-    height: auto;
+    height: 100dvh;
+    color: #fff;
     
 }
 
@@ -15,10 +32,10 @@ header {
     z-index: 1;
     height: 50px;
     width: 100%;
-    border-bottom: 1px solid #3E402D;
+    border-bottom: 1px solid #0e0e0e;
+    background-color: #0e0e0e;
     top: 0;
     left: 0;
-    background-color: #A1A67C;
     text-align: center;
     align-content: center;
     opacity: 0.8;
@@ -31,12 +48,11 @@ nav {
     width: 100%;
     justify-content: center;
     gap: 70px; 
-    align-items: center;
-    
-    }
+    align-items: center;    
+}
 
 nav a {
-    color: black;
+    color: #fff;
     transition: color 0.25s;
     position: relative;
     cursor: pointer;
@@ -50,7 +66,7 @@ nav a::after {
     position: absolute;
     content: "";
     inset: 0;
-    background: #F2E5BD;
+    background: #369fa4;
     scale: 1.5 0;
     z-index: -1;
     transition: 0.3s;
@@ -59,38 +75,41 @@ nav a::after {
 
 
 nav a:hover {
-    color: black;
-    
+    color: black; 
 }
 
 nav a:hover::after {
     scale: 1.5 1.5;
-    background: #F2E5BD;
-        
+    background: #369fa4;     
 }
 
 h1 {
     text-align: center; 
+    color: #369fa4;
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    margin: 20px 10px;
 }
 
 h2 {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 50px;    
 }
+
 h3 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #369fa4;
 }
 
 .header {
-    height: 50px;
     background-size: cover;
     padding-top: 35px;    
 }
 .header1 {
-    height: 50px;
+    
     background-size: cover;
     padding-top: 35px;   
-    font-size: 22px;
 }
 
 .insideAbout {
@@ -157,13 +176,14 @@ div div img {
     grid-area: 2 / 2 / 3 / 3;
     display: flex;
     justify-content: center;
+    color: #fff;
 }
 
 .skillsinside .skill {
   position: relative;
   width: 100px;
   height: 100px;
-  background: #BABF93;
+  background: transparent;
   transition: 0.5s;
   transform-style: preserve-3d;
   overflow: hidden;
@@ -172,7 +192,7 @@ div div img {
   border-radius: 10%; 
 }
 button {
-    border-color: #3E402D;
+    border-color: #369fa4;
 }
 .skillsinside:hover .skill {
     transform: rotateY(25deg);
@@ -183,7 +203,7 @@ button {
   .skillsinside .skill:hover {
     transform: rotateY(0deg) scale(1.25);
     z-index: 1;
-    box-shadow: 0 0 40px #F2E5BD;
+    box-shadow: 0 0 10px #369fa4;
   }
   .skillsinside .skill .imgBx {
     position: absolute;
@@ -235,17 +255,20 @@ button {
 .projectDiv {
     text-align: center;
     margin: 30px;
+
 }
 
 .projectDiv p {
     margin-top: 5px;
+    color: #fff;
 }
 
 
 .projectImg {
-  height: 340px;
-  width: 640px;
+    height: fit-content;
+    width: 50%;
   border-radius: 0;
+  opacity: 0.8;
 } 
 
 .projectImg:active {
@@ -253,17 +276,13 @@ button {
     transition: 0.4s ease;
   } 
 
-
-
-
-  
+ 
   .scrollToTopBtn {
     background-color: transparent;
     border: none;
     color: #F2E5BD;
     cursor: pointer;
     font-size: 50px;
-    line-height: 60px;
     width: 60px;
   
     /* place it at the bottom right corner */
@@ -292,24 +311,30 @@ button {
     display: block;
     width: 300px;
     height: 320px;
-    background-color: transparent;
     margin: 0 0;
     transition: box-shadow 0.1s, transform 0.1s;
-    
-    
+    border-radius: 10%;
   }
   
   .tilt:hover {
-    box-shadow: 0px  0px 50px #F2E5BD;
+    box-shadow: 0px  0px 20px #369fa4;
     cursor: pointer;
-    border-radius: 10%
+    border-radius: 10%;
   }
 
 
   footer {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 0px;
     text-align: center;
+    opacity: 0.8;
     font-size: medium;
-    color: #3E402D;
+    color: #Fff;
+  }
+
+  .contactsOut {
+    height: 100dvh;
   }
 
 .contacts {
@@ -318,7 +343,6 @@ button {
     grid-template-rows: repeat(2, 0.5fr);
     grid-column-gap: 0px;
     grid-row-gap: 30px;
-
 }
 
 .contactsInside {
@@ -327,13 +351,14 @@ button {
     width: 100%;
     display: flex;
     justify-content: center; 
-    align-content: center;
-    
+    column-gap: 30px;
+    align-content: center;    
 }
 
 .contactsInside button {
     background-color: transparent;
     border: none;
+    border-bottom: 1px solid #369fa4;
 }
 
 .contactsInside2 {
@@ -347,7 +372,7 @@ button {
 }
 
 #data {
-    border-bottom: 2px solid #A1A67C;
+    color: #369fa4;
 }
 
   .conLogo {
@@ -356,7 +381,7 @@ button {
   }
 
 .conLogo:hover {
-    background-color: #F2E5BD;
+    background-color: #369fa4;
 }
 
 
@@ -396,7 +421,7 @@ button {
     }
     .conLogo {
         max-width: 60%;
-        max-height: 40%;
+        height: auto;
     }
 
     .insideAbout {
@@ -432,12 +457,8 @@ button {
     nav a {
         font-size: 100%;
     }
-    .header {
-        height: 50px;
-    }
-    .header1 h1 {
-        font-size: 100%;
-    }
+    
+    
     .projects {
         display: grid;
         grid-template-columns: 0.1fr auto 0.1fr;
@@ -451,6 +472,7 @@ button {
         margin: 0;
         height: fit-content;
     }
+    
     .projectImg {
         height: inherit;
         max-width: 75%;

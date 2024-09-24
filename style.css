@@ -122,8 +122,7 @@ h3 {
 
 .myPhoto {
     width: 300px;
-    height: 320px;
-    justify-self: center;
+    height: auto;
     border-radius: 10%;
     filter: brightness(60%);
 }
@@ -280,7 +279,7 @@ button {
   .scrollToTopBtn {
     background-color: transparent;
     border: none;
-    color: #F2E5BD;
+    color: #369fa4;
     cursor: pointer;
     font-size: 50px;
     width: 60px;
@@ -310,7 +309,7 @@ button {
 .tilt {
     display: block;
     width: 300px;
-    height: 320px;
+    height: 298px;
     margin: 0 0;
     transition: box-shadow 0.1s, transform 0.1s;
     border-radius: 10%;
@@ -376,8 +375,8 @@ button {
 }
 
   .conLogo {
-    width: 75px;
-    height: 75px;
+    max-width: 75%;
+    height: auto;
   }
 
 .conLogo:hover {
@@ -408,7 +407,7 @@ button {
     .skillsinside .skill {
         max-width: 20%;
         max-height: 15%;
-        border-color: #3E402D;
+        border-color: #369fa4;
     }
    
     .contacts {
@@ -419,9 +418,21 @@ button {
     .contactsInside, .contactsInside2 {
         grid-column: 1 / 4;
     }
+    
+    .contactsInside button {
+        background-color: #369fa4;
+        height: 36px;
+        border-radius: 10px;
+        display: grid;
+        border-bottom: none;       
+    }
+
     .conLogo {
         max-width: 60%;
         height: auto;
+        display: flex;
+        align-self: center;
+        justify-self: center;
     }
 
     .insideAbout {
@@ -439,11 +450,11 @@ button {
     }
     .myPhoto {
         max-width: 100%;
-        max-height: 100%;
+        height: auto;
     }
     .tilt {
-        width: 50%;
-        height: 100%;
+        max-width: 35%;
+        height: fit-content;
         
     }
     .div1 {
@@ -474,8 +485,8 @@ button {
     }
     
     .projectImg {
-        height: inherit;
-        max-width: 75%;
+        height: auto;
+        max-width: 100%;   
     }
 
   }

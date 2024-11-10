@@ -10,15 +10,18 @@ function text33 () {
     document.getElementById('skillName').innerHTML = 'JavaScript';
 }
 function text44 () {
-    document.getElementById('skillName').innerHTML = 'GitHub';
+  document.getElementById('skillName').innerHTML = 'REACT';
 }
 function text55 () {
-    document.getElementById('skillName').innerHTML = 'GIT';
+  document.getElementById('skillName').innerHTML = 'GitHub';
 }
 function text66 () {
-    document.getElementById('skillName').innerHTML = 'Microsoft Visual Studio Code';
+    document.getElementById('skillName').innerHTML = 'GIT';
 }
 function text77 () {
+    document.getElementById('skillName').innerHTML = 'Microsoft Visual Studio Code';
+}
+function text88 () {
   document.getElementById('skillName').innerHTML = 'Web Design';
 }
 
@@ -86,12 +89,7 @@ function handleMove(e) {
   /* Store the y position */
   const yVal = e.layerY
   
-  /*
-    * Calculate rotation valuee along the Y-axis
-    * Here the multiplier 20 is to
-    * Control the rotation
-    * You can change the value and see the results
-    */
+
   const yRotation = 20 * ((xVal - width / 2) / width)
   
   /* Calculate the rotation along the X-axis */

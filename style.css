@@ -107,10 +107,10 @@ h3 {
     padding-top: 35px;    
 }
 .header1 {
-    
     background-size: cover;
     padding-top: 35px;   
 }
+
 
 .insideAbout {
     display: grid;
@@ -340,24 +340,27 @@ button {
     display: grid;
     grid-template-columns: 0.2fr auto 0.2fr;
     grid-template-rows: repeat(2, 0.5fr);
-    grid-column-gap: 0px;
+    grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
 
 .contactsInside {
     grid-area: 1 / 2 / 2 / 3;
     position: relative;
+    flex-wrap: wrap;
     width: 100%;
     display: flex;
     justify-content: center; 
-    column-gap: 30px;
+    gap: 30px;
     align-content: center;    
 }
 
 .contactsInside button {
-    background-color: transparent;
+    background-color: transparent;    
     border: none;
     border-bottom: 1px solid #369fa4;
+    width: 100px;
+    height: 100px;
 }
 
 .contactsInside2 {
@@ -408,6 +411,7 @@ button {
         max-width: 20%;
         max-height: 15%;
         border-color: #369fa4;
+        background-color: #369fa4;
     }
    
     .contacts {
@@ -417,19 +421,21 @@ button {
 
     .contactsInside, .contactsInside2 {
         grid-column: 1 / 4;
+        
     }
     
     .contactsInside button {
         background-color: #369fa4;
-        height: 36px;
         border-radius: 10px;
-        display: grid;
-        border-bottom: none;       
+        border-bottom: none;     
+        max-width: 20%;
+        max-height: 35%; 
     }
 
     .conLogo {
-        max-width: 60%;
-        height: auto;
+        display: flex;
+        width: 50px;
+        height: 50px;        
         display: flex;
         align-self: center;
         justify-self: center;

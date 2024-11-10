@@ -233,7 +233,7 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
 .projects {
@@ -380,6 +380,7 @@ button {
   .conLogo {
     max-width: 75%;
     height: auto;
+    
   }
 
 .conLogo:hover {

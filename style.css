@@ -227,7 +227,7 @@ button {
   .skillsinside .skill:hover .imgBx:before {
     opacity: 1;
   }
-  .skillsinside .skill .imgBx img {
+  .skillsinside .skill img {
     position: absolute;
     top: 0;
     left: 0;
@@ -425,6 +425,7 @@ button {
     }
     
     .contactsInside button {
+        display: grid;
         background-color: #369fa4;
         border-radius: 10px;
         border-bottom: none;     
@@ -436,7 +437,6 @@ button {
         display: flex;
         width: 50px;
         height: 50px;        
-        display: flex;
         align-self: center;
         justify-self: center;
     }

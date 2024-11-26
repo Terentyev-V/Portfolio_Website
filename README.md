@@ -1,10 +1,10 @@
-<h1>Portfolio website</h1>
+<title>Portfolio website</title>
 
 <aside> 
-  <h1>Built With: </h1> 
-  <h2>HTML</h2>
-  <h2>CSS</h2>
-  <h2>JavaScript</h2>
+  <h2>Built With: </h2> 
+  <h3>HTML</h3>
+  <h3>CSS</h3>
+  <h3>JavaScript</h3>
 </aside>
 
 <main>

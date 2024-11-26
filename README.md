@@ -1,4 +1,6 @@
-<title>Portfolio website</title>
+<header>
+  <h1>Portfolio website</h1>
+  </header>
 
 <aside> 
   <h2>Built With: </h2> 

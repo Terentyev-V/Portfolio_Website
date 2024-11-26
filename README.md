@@ -1,4 +1,4 @@
-<header>
+<header align="center">
   <h1>Portfolio website</h1>
   </header>
 
@@ -17,8 +17,5 @@ And this is my private website where you may find everything about me:
 <ul>why I came to Front end;</ul>
 <ul>what skills I have;</ul>
 <ul>what projects I did;</ul>
-<ul>and, sure, how to find me</ul>
-
-
-
+<ul>and, sure, how to find me.</ul>
 </main>

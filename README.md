@@ -1,5 +1,5 @@
-<header align="center">
-  <h1>Portfolio website</h1>
+<header >
+  <h1 align="center">Portfolio website</h1>
   </header>
 
 <aside> 

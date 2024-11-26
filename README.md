@@ -1,7 +1,7 @@
 <header >
   <h1 align="center">Portfolio website</h1>
   </header>
-
+<br><br>
 <aside> 
   <h2>Built With: </h2> 
   <h3>HTML</h3>
@@ -23,14 +23,14 @@ And this is my private website where you may find everything about me:
 
 
 <style>
-  ul {
-    list-style-type: disc;
-    background-color: #f0f0f0;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+   ul {
+    list-style: none;
+    padding: 0;
   }
-  ul li {
-    margin-bottom: 5px; /* Отступ между пунктами */
+  ul li::before {
+    content: "•";
+    color: linear-gradient(to right, #ff7e5f, #feb47b); /* Градиентный цвет */
+    font-size: 1.2rem;
+    margin-right: 10px;
   }
 </style>
